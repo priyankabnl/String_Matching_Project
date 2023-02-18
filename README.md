@@ -1,8 +1,6 @@
 # String_Matching_Project
-In this Project, I am reading data from 2 excel files. Both have some similarity but I would like to find the exact match. 
+In this project, the goal is to identify exact matches between two Excel files that share some similarities. However, these files may contain variations in the formatting of their data, which makes comparing them difficult. To overcome this challenge, the Python programming language offers a built-in module named "difflib," which provides a SequenceMatcher class that can compare two strings and calculate their similarity ratio.
 
-So, I used SequenceMatcher - It is a class available in python module named “difflib”. It can be used for comparing pairs of input sequences. 
-It helps me in comparing the two strings and then I found the ratio for the same. 
+Using the SequenceMatcher class, I compared the strings from both Excel files and obtained a score that represents the similarity ratio between the two strings. The score ranges from 0 to 1, where 0 means the strings have no similarities, and 1 indicates that the strings are identical.
 
-I displayed the maximum score of that ratio as my output for comparing strings.
-
+After obtaining the scores, I selected the highest score as my output, which represents the closest match between the two strings. This approach allows me to identify the best matching data from the two Excel files, even if the formatting is slightly different.
